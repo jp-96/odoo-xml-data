@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="project_1_task_2_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_2"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=2)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_2_mail_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_2"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=1)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_3_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_3"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=4)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_3_mail_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_3"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=4)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_4_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_4"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=4)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_4_mail_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_4"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=3)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_5_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_5"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=4)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_6_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_6"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=2)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_7_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_7"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=3)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_8_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_1_task_8"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(months=1)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_1_task_8_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project_1_task_8"/>
+			<field name="message_type">comment</field>
+			<field name="date" eval="(DateTime.now() - relativedelta(days=3)).strftime('%Y-%m-%d 09:43:27')"/>
+			<field name="author_id" ref="base.partner_demo"/>
+			<field name="body">Hello Admin,
+                Can we discuss this? Having nicer chairs for managers doesn't sit right with me.</field>
+		</record>
+		<record id="project_1_task_8_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project_1_task_8"/>
+			<field name="message_type">comment</field>
+			<field name="date" eval="(DateTime.now() - relativedelta(days=3)).strftime('%Y-%m-%d 11:52:03')"/>
+			<field name="author_id" ref="base.partner_admin"/>
+			<field name="body">We have already discussed, and I stand by my decision.</field>
+			<field name="parent_id" ref="project_1_task_8_message_1"/>
+		</record>
+		<record id="project_2_task_1_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_1"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(weeks=16)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_1_mail_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_1"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() + relativedelta(weeks=-16, days=4)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_2_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_2"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(weeks=15)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_2_mail_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_2"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(weeks=14)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_3_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_3"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() + relativedelta(weeks=-14, days=1)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_3_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project_2_task_3"/>
+			<field name="message_type">comment</field>
+			<field name="date" eval="(DateTime.now() + relativedelta(weeks=-9, days=2)).strftime('%Y-%m-%d 11:23:17')"/>
+			<field name="author_id" ref="base.partner_root"/>
+			<field name="body">Hello Demo,
+There is a change in customer requirement.
+Can you check the document from customer again.
+Thanks,</field>
+		</record>
+		<record id="project_2_task_3_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project_2_task_3"/>
+			<field name="message_type">comment</field>
+			<field name="date" eval="(DateTime.now() + relativedelta(weeks=-9, days=2)).strftime('%Y-%m-%d 12:04:58')"/>
+			<field name="author_id" ref="base.partner_demo"/>
+			<field name="body">Ok, I have checked the mail,
+I will update the document and let you know.</field>
+			<field name="parent_id" ref="project_2_task_3_message_1"/>
+		</record>
+		<record id="project_2_task_3_message_3" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project_2_task_3"/>
+			<field name="message_type">comment</field>
+			<field name="date" eval="(DateTime.now() + relativedelta(weeks=-9, days=2)).strftime('%Y-%m-%d 12:15:26')"/>
+			<field name="author_id" ref="base.partner_root"/>
+			<field name="body">Fine!
+Send it ASAP, its urgent.</field>
+			<field name="parent_id" ref="project_2_task_3_message_2"/>
+		</record>
+		<record id="project_2_task_4_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_4"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() + relativedelta(weeks=-11)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_5_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_5"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() + relativedelta(weeks=-12, days=6)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_6_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_6"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() + relativedelta(weeks=-11, days=3)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_7_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_7"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() + relativedelta(weeks=-12, days=5)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_7_mail_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_7"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() + relativedelta(weeks=-9, days=3)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_2_task_8_mail_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project.project_2_task_8"/>
+			<field name="message_type">notification</field>
+			<field name="subtype_id" ref="mt_task_stage"/>
+			<field name="date" eval="DateTime.now() - relativedelta(weeks=10)"/>
+			<field name="author_id" ref="base.partner_admin"/>
+		</record>
+		<record id="project_3_task_2_message_1" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project_3_task_2"/>
+			<field name="message_type">comment</field>
+			<field name="date" eval="(DateTime.now() - relativedelta(weeks=3)).strftime('%Y-%m-%d 09:42:13')"/>
+			<field name="author_id" ref="base.partner_admin"/>
+			<field name="body">The elevator's state leaves much to be desired on many levels, we might need to take steps to repair it.</field>
+		</record>
+		<record id="project_3_task_2_message_2" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project_3_task_2"/>
+			<field name="message_type">comment</field>
+			<field name="date" eval="(DateTime.now() - relativedelta(weeks=3)).strftime('%Y-%m-%d 10:23:48')"/>
+			<field name="author_id" ref="base.partner_demo"/>
+			<field name="body">This is not very uplifting, it would probably raise the expenses by a lot. 😕</field>
+			<field name="parent_id" ref="project_3_task_2_message_1"/>
+		</record>
+		<record id="project_3_task_2_message_3" model="mail.message">
+			<field name="model">project.task</field>
+			<field name="res_id" ref="project_3_task_2"/>
+			<field name="message_type">comment</field>
+			<field name="date" eval="(DateTime.now() - relativedelta(weeks=3)).strftime('%Y-%m-%d 10:57:04')"/>
+			<field name="author_id" ref="base.partner_admin"/>
+			<field name="body">I know, it's driving me up the wall.</field>
+			<field name="parent_id" ref="project_3_task_2_message_2"/>
+		</record>
+	</data>
+</odoo>

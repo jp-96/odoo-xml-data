@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="aidproject.list">
+      <field name="name">aidproject list</field>
+      <field name="model">aidproject.aidproject</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="aidproject.action_window">
+      <field name="name">aidproject window</field>
+      <field name="res_model">aidproject.aidproject</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="aidproject.action_server">
+      <field name="name">aidproject server</field>
+      <field name="model_id" ref="model_aidproject_aidproject"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="aidproject" id="aidproject.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="aidproject.menu_1" parent="aidproject.menu_root"/>
+    <menuitem name="Menu 2" id="aidproject.menu_2" parent="aidproject.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="aidproject.menu_1_list" parent="aidproject.menu_1"
+              action="aidproject.action_window"/>
+    <menuitem name="Server to list" id="aidproject" parent="aidproject.menu_2"
+              action="aidproject.action_server"/>
+-->
+  </data>
+</odoo>

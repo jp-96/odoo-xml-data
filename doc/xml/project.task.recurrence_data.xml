@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="project_task_recurrence_1" model="project.task.recurrence">
+			<field name="recurrence_left">3</field>
+			<field name="repeat_unit">month</field>
+			<field name="repeat_on_month">date</field>
+			<field name="repeat_type">after</field>
+			<field name="repeat_number">4</field>
+			<field name="repeat_day">1</field>
+			<field name="repeat_weekday">mon</field>
+			<field name="create_date" eval="DateTime.now() + relativedelta(weeks=-2)"/>
+		</record>
+		<record id="project_task_recurrence_1" model="project.task.recurrence">
+			<field name="next_recurrence_date" eval="DateTime.now() + relativedelta(weeks=-2)"/>
+		</record>
+		<record id="project_task_recurrence_2" model="project.task.recurrence">
+			<field name="recurrence_left">20</field>
+			<field name="repeat_type">after</field>
+			<field name="repeat_number">20</field>
+			<field name="mon" eval="True"/>
+			<field name="tue" eval="True"/>
+			<field name="wed" eval="True"/>
+			<field name="thu" eval="True"/>
+			<field name="fri" eval="True"/>
+		</record>
+		<record id="project_task_recurrence_2" model="project.task.recurrence">
+			<field name="next_recurrence_date" eval="DateTime.now() + relativedelta(weeks=-2)"/>
+		</record>
+	</data>
+</odoo>

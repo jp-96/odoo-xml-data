@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="project_tags_00" model="project.tags">
+			<field name="name">Bug</field>
+		</record>
+		<record id="project_tags_01" model="project.tags">
+			<field name="name">New Feature</field>
+		</record>
+		<record id="project_tags_02" model="project.tags">
+			<field name="name">Experiment</field>
+		</record>
+		<record id="project_tags_03" model="project.tags">
+			<field name="name">Usability</field>
+		</record>
+		<record id="project_tags_04" model="project.tags">
+			<field name="name">Internal</field>
+		</record>
+		<record id="project_tags_05" model="project.tags">
+			<field name="name">External</field>
+		</record>
+	</data>
+</odoo>
