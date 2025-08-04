@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="project_1_milestone_1" model="project.milestone">
+			<field name="is_reached" eval="True"/>
+			<field name="deadline" eval="time.strftime('%Y-%m-10')"/>
+			<field name="name">First Phase</field>
+			<field name="reached_date" eval="time.strftime('%Y-%m-10')"/>
+			<field name="project_id" ref="project.project_project_1"/>
+		</record>
+		<record id="project_1_milestone_2" model="project.milestone">
+			<field name="is_reached" eval="False"/>
+			<field name="deadline" eval="(DateTime.now() + relativedelta(years=1)).strftime('%Y-%m-15')"/>
+			<field name="name">Second Phase</field>
+			<field name="project_id" ref="project.project_project_1"/>
+		</record>
+		<record id="project_1_milestone_3" model="project.milestone">
+			<field name="is_reached" eval="False"/>
+			<field name="deadline" eval="(DateTime.now() + relativedelta(years=2)).strftime('%Y-%m-%d')"/>
+			<field name="name">Final Phase</field>
+			<field name="project_id" ref="project.project_project_1"/>
+		</record>
+	</data>
+</odoo>

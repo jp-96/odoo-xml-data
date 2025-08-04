@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="project_project_1" model="project.project">
+			<field name="date_start" eval="DateTime.today() - relativedelta(weeks=9)"/>
+			<field name="date" eval="DateTime.today() + relativedelta(weekday=4,weeks=1)"/>
+			<field name="name">Office Design</field>
+			<field name="color">3</field>
+			<field name="user_id" ref="base.user_demo"/>
+			<field name="type_ids" eval="[Command.link(ref('project_stage_0')), Command.link(ref('project_stage_1')), Command.link(ref('project_stage_2')), Command.link(ref('project_stage_3'))]"/>
+			<field name="partner_id" ref="base.partner_demo_portal"/>
+			<field name="privacy_visibility">portal</field>
+			<field name="favorite_user_ids" eval="[Command.link(ref('base.user_admin'))]"/>
+			<field name="tag_ids" eval="[Command.link(ref('project.project_tags_05'))]"/>
+			<field name="stage_id" ref="project.project_project_stage_1"/>
+			<field name="analytic_account_id" ref="project.analytic_office_design"/>
+		</record>
+		<record id="project_project_2" model="project.project">
+			<field name="name">Research &amp; Development</field>
+			<field name="user_id" ref="base.user_admin"/>
+			<field name="type_ids" eval="[Command.link(ref('project_stage_0')), Command.link(ref('project_stage_1')), Command.link(ref('project_stage_2')), Command.link(ref('project_stage_3'))]"/>
+			<field name="privacy_visibility">followers</field>
+			<field name="favorite_user_ids" eval="[Command.link(ref('base.user_admin'))]"/>
+			<field name="tag_ids" eval="[Command.link(ref('project.project_tags_04'))]"/>
+			<field name="stage_id" ref="project.project_project_stage_1"/>
+			<field name="analytic_account_id" ref="project.analytic_research_development"/>
+		</record>
+		<record id="project_project_3" model="project.project">
+			<field name="date_start" eval="(DateTime.today() + relativedelta(months=-2)).strftime('%Y-%m-%d 10:00:00')"/>
+			<field name="date" eval="(DateTime.today() + relativedelta(days=-5)).strftime('%Y-%m-%d 17:00:00')"/>
+			<field name="name">Renovations</field>
+			<field name="color">4</field>
+			<field name="user_id" ref="base.user_admin"/>
+			<field name="type_ids" eval="[Command.link(ref('project_stage_0')), Command.link(ref('project_stage_1')), Command.link(ref('project_stage_2')), Command.link(ref('project_stage_3'))]"/>
+			<field name="privacy_visibility">employees</field>
+			<field name="favorite_user_ids" eval="[Command.link(ref('base.user_admin'))]"/>
+			<field name="tag_ids" eval="[Command.link(ref('project_tags_04')), Command.link(ref('project_tags_02'))]"/>
+			<field name="stage_id" ref="project.project_project_stage_2"/>
+			<field name="analytic_account_id" ref="project.analytic_renovations"/>
+			<field name="description">Renovation work at the YourCompany headquarters.</field>
+		</record>
+	</data>
+</odoo>
